@@ -1,0 +1,51 @@
+<h3 class="ui header">{{t "forms.i-i-s-test555555-new-class2-e.caption"}}{{#if readonly}} ({{t "forms.edit-form.readonly"}}){{/if}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    {{flexberry-edit-panel
+      showCloseButton=true
+      deepMount=true
+      readonly=readonly
+      buttons=(array
+        (hash
+          type="submit"
+          class="save-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.save-button-text")
+          icon="icon icon-save"
+          action="save")
+        (hash
+          type="submit"
+          class="save-close-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.saveAndClose-button-text")
+          icon="icon icon-save-close"
+          action="saveAndClose"
+        ))
+    }}
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-test555555-new-class2-e.newClass1-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.newClass1
+      relationName="newClass1"
+      projection="NewClass1L"
+      title=(t "forms.i-i-s-test555555-new-class2-e.newClass1-caption")
+      readonly=readonly
+      componentName="newClass1Lookup"
+      updateLookupValue=(action "updateLookupValue")
+      class=(if (v-get validationModel "newClass1" "isInvalid") "error")
+      data-test-i-i-s-test555555-new-class2-e-newClass1=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "newClass1" "message")}}
+  </div>
+
+</form>

@@ -1,0 +1,53 @@
+﻿{
+  "name": "IISTest555555NewClass2",
+  "modelName": "i-i-s-test555555-new-class2",
+  "className": "NewClass2",
+  "nameSpace": "IIS.Test555555",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "newClass1",
+      "relatedTo": "i-i-s-test555555-new-class1",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "NewClass2E",
+      "modelName": "i-i-s-test555555-new-class2",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "NewClass1",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 0,
+          "type": "standard",
+          "caption": "New class1",
+          "name": "newClass1",
+          "relatedTo": "i-i-s-test555555-new-class1",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "NewClass2L",
+      "modelName": "i-i-s-test555555-new-class2",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

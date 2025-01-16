@@ -1,0 +1,30 @@
+﻿{
+  "name": "IISTest555555NewClass1",
+  "modelName": "i-i-s-test555555-new-class1",
+  "className": "NewClass1",
+  "nameSpace": "IIS.Test555555",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "NewClass1E",
+      "modelName": "i-i-s-test555555-new-class1",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "NewClass1L",
+      "modelName": "i-i-s-test555555-new-class1",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
