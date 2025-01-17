@@ -28,6 +28,7 @@ export default Controller.extend({
             link: 'i-i-s-test555555-new-class2-l',
             caption: i18n.t('forms.application.sitemap.test555555.i-i-s-test555555-new-class2-l.caption'),
             title: i18n.t('forms.application.sitemap.test555555.i-i-s-test555555-new-class2-l.title'),
+            icon: 'list',
             children: null
           }]
         }
